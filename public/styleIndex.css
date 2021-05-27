@@ -1,0 +1,25 @@
+body {
+    background-image: url("https://images.unsplash.com/photo-1536514498073-50e69d39c6cf?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8");
+    background-size: cover;
+    font-family: "Segoe UI";
+    margin: 0;
+}
+
+div.navbar {
+    align-items: center;
+    background: #5b5b5b;
+    display: grid;
+    grid-auto-flow: column;
+    height: 100px;
+}
+
+div.navbar-logo img {
+    height: 80px;
+    margin: 0 32px;
+}
+
+div.navbar-links a {
+    color: #f0c38e;
+    margin: 0 16px;
+    text-decoration: none;
+}

@@ -4,13 +4,16 @@ html
         meta(charset="UTF-8")
         meta(name="viewport", content="width=device-width, initial-scale=1.0")
         title Mademoiselle
-        link(rel="stylesheet", href="/public/style.css")
+        link(rel="stylesheet", href="/public/styleIndex.css")
     body    
-        h1 Mademoiselle 
 
-        hr
+        div(class="navbar")
 
-        form(action="/postar", method="POST")
-            input(type="text", name="autor", placeholder="autor", max="32")
-            textarea(name="descricao", placeholder= "Digite uma breve descricao")
-            input(type="submit", value="postar")
+            div(class="navbar-logo")
+                img(src="/public/logo.png")
+
+            div(class="navbar-links")
+                a(href="/") Home
+                a(href="/feed") Feed 
+                a(href="/post") Post 
+
