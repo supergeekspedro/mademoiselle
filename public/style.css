@@ -1,0 +1,21 @@
+body {
+    background-color: aqua;
+    color: blueviolet;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+h1 {
+    color: cornflowerblue;
+}
+
+input[type="text"] {
+    background-color: cornflowerblue;
+    border: dimgray;
+    color: dimgray;
+}
+
+textarea{
+    background-color: blueviolet;
+    border: ghostwhite;
+    color: ghostwhite;
+}
