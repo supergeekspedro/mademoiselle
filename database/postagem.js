@@ -17,4 +17,15 @@ async function pegarPostagens(){
     return resultados.rows
 }
 
-module.exports = { fazerPostagem, pegarPostagens }
+async function excluirPostagem(autor) {
+    const comando = "DELETE FROM postagem WHERE autor = $1;"
+    try {
+        await cliente.query(comando, [autor])
+    }
+    catch (erro) {
+        console.error(erro)
+        return erro
+    }
+}
+
+module.exports = { fazerPostagem, pegarPostagens, excluirPostagem }

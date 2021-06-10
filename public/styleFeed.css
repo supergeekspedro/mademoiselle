@@ -18,16 +18,40 @@ div.navbar-logo img {
     margin: 0 32px;
 }
 
+div.navbar-links a {
+    color: #f0c38e;
+    margin: 0 16px;
+    text-decoration: none;
+}
+
 div.content {
     display: grid;
     gap: 16px;
     grid-template-columns: repeat(3, 1fr);
-    grid-auto-rows: 180px;
-    margin: 0 auto;
+    grid-auto-rows: 200px;
+    margin: 16px auto;
     width: 80vw;
-}
+} 
 
 div.content-post {
     background: #f9f3f3;
-    color: #f0c38e;
+    color: #5b5b5b;
+    padding: 16px;
+    overflow-y: auto;
+}
+
+div.content-post-author {
+    font-size: 14pt;
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+
+div.content-post-describe {
+    font-size: 14pt;
+    opacity: 0.8;
+}
+
+div.content a {
+    font-size: 20pt;
+    text-decoration: none;
 }

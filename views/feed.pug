@@ -6,12 +6,18 @@ html
         title Mademoiselle 
         link(rel="stylesheet", href="/public/styleFeed.css")
     body    
-        div(class="navbar")
 
+        div(class="navbar")
             div(class="navbar-logo")
                 img(src="/public/logo.png")
+            div(class="navbar-links")
+                a(href="/") Home
+                a(href="/feed") Feed 
+                a(href="/post") Post 
         
-        each postagem in postagens
-            div(class="postagem")
-                div(class="postagem-autor") #{postagem.autor}
-                div(class="postagem-descricao") #{postagem.descricao}
+        div(class="content")
+            each postagem in postagens
+                div(class="content-post")
+                    div(class="content-post-author") #{postagem.autor}
+                    div(class="content-post-describe") #{postagem.descricao}
+                    a(href=`/deletar/${postagem.autor}`) 💣
